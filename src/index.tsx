@@ -3,6 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import "./font/IBMPlexMono-Bold.ttf";
+import "./font/IBMPlexMono-ExtraLight.ttf";
+import "./font/IBMPlexMono-Light.ttf";
+import "./font/IBMPlexMono-Medium.ttf";
+import "./font/IBMPlexMono-Regular.ttf";
+import "./font/IBMPlexMono-SemiBold.ttf";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

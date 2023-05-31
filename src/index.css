@@ -11,3 +11,41 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "IBM Plex Mono Bold";
+  src: local("IBM Plex Mono Bold"),
+    url("./font/IBMPlexMono-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "IBM Plex Mono ExtraLight";
+  src: local("IBM Plex Mono ExtraLight"),
+    url("./font/IBMPlexMono-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IBM Plex Mono Light";
+  src: local("IBM Plex Mono Light"),
+    url("./font/IBMPlexMono-ExtraLight.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IBM Plex Mono Medium";
+  src: local("IBM Plex Mono Medium"),
+    url("./font/IBMPlexMono-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IBM Plex Mono Regular";
+  src: local("IBM Plex Mono Regular"),
+    url("./font/IBMPlexMono-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "IBM Plex Mono SemiBold";
+  src: local("IBM Plex Mono SemiBold"),
+    url("./font/IBMPlexMono-SemiBold.ttf") format("truetype");
+
+}

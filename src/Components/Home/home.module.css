@@ -1,0 +1,318 @@
+.main-container {
+	display: flex;
+	width: 100%;
+}
+
+.bg-image {
+	width: 100vw;
+	height: 560px;
+	background-image: url('../../assets/Image.svg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.text-padding {
+	padding-top: 4vw;
+}
+
+.welcome-text {
+	font-family: 'IBM Plex Mono Medium';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 109px;
+	line-height: 132px;
+	/* or 94% */
+
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 6.44%, #FFFFFF 95.08%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+	width: 650px;
+	margin: auto;
+	margin-top: 76px;
+}
+
+.highlight-section {
+	display: flex;
+	padding-top: 2vw;
+	padding-left: 14vw;
+}
+
+.highlight-text {
+	display: flex;
+	padding-left: 1vw;
+	font-family: 'IBM Plex Mono Bold';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	color: #001A1A;
+	margin-bottom: 20px;
+	flex-direction: column;
+	text-align: left;
+}
+
+.card-container {
+	display: flex;
+}
+
+.card-body {
+	background-color: #FFFFFF;
+	width: 24vw;
+	/* height: 22vw; */
+	margin: 2vw 1vw;
+	border-radius: 8px;
+	box-shadow: 0px 0px 16px rgba(0, 128, 128, 0.16);
+
+}
+
+.card-img {
+	width: 100%;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
+}
+
+.card-header {
+	display: flex;
+	padding: 16px;
+	font-family: 'IBM Plex Mono Bold';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 20px;
+	/* identical to box height, or 83% */
+
+
+	/* Green */
+
+	color: #008080;
+}
+
+.card-subheader {
+	display: flex;
+	padding-left: 16px;
+	height: 2.5vw;
+	font-family: 'IBM Plex Mono Medium';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	color: #001A1A;
+	text-align: left;
+}
+
+.card-arrow-image {
+	width: 3vw;
+	padding: 1vw;
+	float: right;
+}
+
+
+.Catergories-section {
+
+	display: flex;
+	padding-top: 2vw;
+	/* padding-left: 14vw; */
+	background: #E6F2F2;
+	/* width: 100vw; */
+	padding-left: 96px;
+	padding-right: 96px;
+}
+
+.catergories-card-container {}
+
+.catergories-card-body {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 16px;
+	gap: 10px;
+	width: calc(50vw - 96px);
+	height: 40px;
+	background: #FFFFFF;
+	border-radius: 8px;
+	margin-bottom: 1vw;
+}
+
+.catergories-text {
+	font-family: 'IBM Plex Mono Regular';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	color: #001A1A;
+}
+
+.travel-arrow-img {
+	padding: 1vw;
+	float: right;
+	width: 16px;
+	height: 16px;
+}
+
+.Traval-card-body {
+	/* width: 560px; */
+	/* height: 176px; */
+	background: #FFFFFF;
+	border-radius: 8px;
+	margin-left: 16px;
+	display: flex;
+	margin-top: 10px;
+}
+
+.travel-profile-img {
+	/* position: relative;
+	bottom: 12vw; */
+	padding: 10px;
+	margin-left: auto;
+	/* float: right; */
+
+	/* width: 128px;
+	height: 128px; */
+}
+
+.Travel-text {
+	display: flex;
+	padding: 1vw;
+	font-family: 'IBM Plex Mono Bold';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 20px;
+	color: #001A1A;
+}
+
+.Travel-btn-div {
+	display: flex;
+	padding: 2.5vw 2vw;
+}
+
+.Travel-button {
+	background-color: #FFFFFF;
+	;
+	/* Green */
+	border: 2px solid #008080;
+	color: #008080;
+	padding: 12px 28px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	border-radius: 8px;
+	height: fit-content;
+}
+
+.Travel-subtext {
+	display: flex;
+	padding-left: 1vw;
+	font-family: 'IBM Plex Mono Regular';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	color: #001A1A;
+}
+
+.footer-section {
+	display: flex;
+	padding-top: 2vw;
+	padding-left: 14vw;
+
+	background: #001A1A;
+}
+
+.nav-section {
+	display: none;
+	padding-top: 2vw;
+	padding-left: 14vw;
+
+	background: #FFFFFF;
+}
+
+.menu {
+	float: right;
+}
+
+@media screen and (max-width: 500px) {
+	.nav-section {
+		display: flex;
+	}
+
+	.card-body {
+		width: 93vw;
+		height: max-content;
+	}
+
+	.Catergories-section {
+		flex-flow: wrap;
+		width: auto;
+		height: max-content;
+		padding-left: 0;
+		margin-top: 80px;
+	}
+
+	.highlight-section {
+		overflow-x: scroll;
+	}
+
+	.Traval-card-body {
+		width: 100vw;
+		margin-left: 0;
+	}
+
+	.catergories-card-body {
+		width: auto;
+	}
+
+	.travel-profile-img {
+		bottom: 20vw;
+	}
+
+	.highlight-section {
+		padding-left: 3vw;
+	}
+
+	.highlight-text {
+		margin-top: 10px;
+	}
+
+	.bg-image {
+		height: 480px;
+	}
+
+	.welcome-text {
+		font-size: 64px;
+		line-height: 60px;
+		width: 350px;
+		margin: auto;
+		margin-top: 189px;
+	}
+
+	.card-subheader {
+		height: 0;
+		padding-left: 7px;
+		margin-left: auto;
+	}
+
+	.card-arrow-image {
+		width: 40px;
+		display: flex;
+		margin-left: auto;
+		margin-top: 10px;
+		padding: 6vw;
+	}
+
+	.catergories-card-container {
+		width: 100vw;
+	}
+}
