@@ -10,16 +10,46 @@ import catarrowImage from "../../assets/arrow_forward.svg"
 import profile from "../../assets/Ellipse 10.svg"
 import footeraloha from "../../assets/AlohaWhite.svg"
 import alohanav from "../../assets/Aloha.svg"
+import menu from "../../assets/menu.svg"
+import close from "../../assets/close.svg"
+import useFetch from "../../hooks/fetchhook";
 
 
 const Home = () => {
+	const [isOpen, setIsOpen] = useState(false)
+
+	const [data, loading, error] = useFetch({ apiPath: "https://web-dev.dev.kimo.ai/v1/highlights" })
+	const [categories, categoriesloading, categorieserror] = useFetch({ apiPath: "https://web-dev.dev.kimo.ai/v1/categories" })
+	const [activity, activityloading, activityerror] = useFetch({ apiPath: "https://web-dev.dev.kimo.ai/v1/activities/{activity_type}" })
+
+
+	console.log(data, error, "Response");
+
 	return (
 		<div>
 			<div className={Styles["nav-section"]}>
-				<div>
+				<div className={Styles["nav-maindiv"]} >
 					<div className={Styles["nav-text"]}>
-						{/* <span>Highlights</span> */}
 						<img className={Styles["footer-aloha"]} src={alohanav}></img>
+					</div>
+					<div>
+						<button
+							onClick={() => setIsOpen(!isOpen)}
+							className={Styles["btn-div"]}
+						>
+							{isOpen ? <img className={Styles["menu-bar"]} src={close} /> : <img className={Styles["close-bar"]} src={menu} />}
+						</button>
+
+						{isOpen && (
+							<div className={Styles["card-text"]}>
+								<div className={Styles["highlight-section"]}>home</div>
+								<div className={Styles["highlight-section"]}>surfing</div>
+								<div className={Styles["highlight-section"]}>hula</div>
+								<div className={Styles["highlight-section"]}>valcano</div>
+								<button className={Styles["book-btn"]}>book a trip</button>
+							</div>
+						)}
+
 					</div>
 				</div>
 			</div>
@@ -40,6 +70,19 @@ const Home = () => {
 						<span>Highlights</span>
 					</div>
 					<div className={Styles["card-container"]}>
+
+						{/* Api map code */}
+						{/* {data.map((item:any)=>{
+							return (
+								<div className={Styles["card-body"]}>
+							<img className={Styles["card-img"]} src={cardImg1}></img>
+
+							<span className={Styles["card-header"]}>{item.title}</span>
+							<span className={Styles["card-subheader"]}>{item.description}</span>
+							<img className={Styles["card-arrow-image"]} src={item.image}></img>
+						</div>
+							)
+						})} */}
 						<div className={Styles["card-body"]}>
 							<img className={Styles["card-img"]} src={cardImg1}></img>
 
